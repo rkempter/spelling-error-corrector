@@ -1,14 +1,10 @@
 
 import java.util.ArrayList;
-import java.util.Vector;
-
 
 public class spellChecker {
 	
 	private static ArrayList<ArrayList<Integer>> matrix = new ArrayList<ArrayList<Integer>>();
 	private static int cutoff = 2;
-	
-	
 	
 	public spellChecker(StringBuffer wordX, String wordY)
 	{
@@ -97,7 +93,7 @@ public class spellChecker {
 	
 	private boolean checkConditions(StringBuffer wordX, StringBuffer wordY) {
 		if(matrix.size() <= wordY.length()) {
-			Vector<Integer> row = new Vector<Integer>();
+			ArrayList<Integer> row = new ArrayList<Integer>();
 			row.add(wordY.length()-1);
 		}
 		
